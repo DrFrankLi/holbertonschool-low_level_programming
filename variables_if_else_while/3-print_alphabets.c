@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Putchar alphabet in lowercase then in uppercase, followed by a new line
+ * main - Putchar alphabet in lowercase then uppercase, followed by a new line
  * Return: Always 0 (Sucesscess)
  */
 
