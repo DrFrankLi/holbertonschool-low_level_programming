@@ -7,11 +7,11 @@
 
 int main(void)
 {
-	int n = '0';
+	int n = 0;
 
 	while (n <= 16)
 	{
-		putchar('0'+n);
+		putchar('0' + n);
 			n++;
 	}
 
