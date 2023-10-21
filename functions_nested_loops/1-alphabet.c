@@ -2,7 +2,7 @@
 
 /**
  * main -_putchar lowercase alphabet,\n
- * Return: void
+ * Return: Void
  */
 
 void print_alphabet(void)
