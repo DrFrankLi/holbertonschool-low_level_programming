@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_sign - Function prints the sign of a number
+ * print_sign - Function to return +, 0, - depending if positive or negative
  * @n: the value being tested
  * Returns: 1 + is n is greater than 0, 0 and 0 if 0,-1 - if n less than 0
  */
