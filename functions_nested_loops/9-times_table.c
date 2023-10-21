@@ -10,15 +10,15 @@ void times_table(void)
 	int x;
 	int y;
 
-	while ( y < 10)
+while( y < 10)
 	{
-		while ( x < 10)
+		while( x < 10)
 		{
-			_putchar ( x*y + '0');
-			_putchar (',');
+			_putchar( x * y + '0');
+			_putchar(',');
 			x++;
 		}
 		y++;
-		_putchar ('\n');
+		_putchar('\n');
 	}
 }
