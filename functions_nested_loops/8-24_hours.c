@@ -16,8 +16,18 @@ void jack_bauer(void)
 		m = 0;
 		while (m >= 0 && m < 60)
 		{
-			_putchar (48 + m);
-			m++;
+			if (m >= 0 && m <=9)
+			{
+				_putchar ('0');
+				_putchar (48 + m);
+				m++;
+			}
+			else
+			{
+				_putchar (48 + m);
+				m++;
+			}
+
 		}
 		_putchar (48 + h);
 		h++;
