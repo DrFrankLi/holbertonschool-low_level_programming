@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * 'print_sign' - return value '+', 0,'-' depending if positive or negative
+ * print_sign - return value '+', 0,'-' depending if positive or negative
  * @n: the value being tested
  * Returns: 1, 0  or -1
  */
