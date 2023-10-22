@@ -16,10 +16,21 @@ void times_table(void)
 		x = 0;
 		while (x < 10)
 		{
-			_putchar('0' + x * y);
-			_putchar(',');
-			_putchar(' ');
-			x++;
+			if (x * y < 10)
+			{
+				_putchar('0' + x * y);
+				_putchar(',');
+				_putchar(' ');
+				x++;
+			}
+			else
+			{
+				_putchar('0' + x * y / 10);
+				_putchar('0' + x * y % 10);
+				_putchar(',');
+				_putchar(' ');
+				x++;
+			}
 		}
 		y++;
 		_putchar('\n');
