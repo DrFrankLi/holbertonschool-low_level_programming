@@ -10,8 +10,10 @@ void times_table(void)
 	int x;
 	int y;
 
+	y = 0;
 	while (y < 10)
 	{
+		x = 0;
 		while (x < 10)
 		{
 			_putchar('0' + x * y);
