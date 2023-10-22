@@ -21,12 +21,13 @@ void times_table(void)
 				_putchar('0' + x * y);
 				_putchar(',');
 				_putchar(' ');
+				_putchar(' ');
 				x++;
 			}
 			else if (x * y > 0 && x * y < 10)
 			{
-				_putchar('0' + x * y / 10);
-				_putchar('0' + x * y % 10);
+				_putchar(' ');
+				_putchar('0' + x * y);
 				_putchar(',');
 				_putchar(' ');
 				x++;
