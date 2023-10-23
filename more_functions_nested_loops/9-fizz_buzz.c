@@ -25,9 +25,17 @@ int main(void)
 		}
 		else
 		{
-			printf("%d ", n);
+			if (n != 100)
+			{
+				printf("%d ", n);
+			}
+			else
+			{
+				printf("%d", n);
+			}
 		}
 		n++;
 	}
-	return (0);
+	printf("\n");
+	return(0);
 }
