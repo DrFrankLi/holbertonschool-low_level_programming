@@ -11,10 +11,10 @@ void more_numbers(void)
 	char h;
 	char v;
 
-	v = '0';
+	v = 0;
 	while (v < 10)
 	{
-		h = '0';
+		h = 0;
 		while (h <= 14)
 		{
 			if (h > 9)
