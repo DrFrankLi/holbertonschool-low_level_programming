@@ -29,5 +29,5 @@ int main(void)
 		}
 		n++;
 	}
-	return (0);
+	return ('\n');
 }
