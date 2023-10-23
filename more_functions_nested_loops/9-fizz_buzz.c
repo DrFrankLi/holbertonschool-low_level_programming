@@ -1,46 +1,33 @@
 #include <stdio.h>
 
 /**
- * main - print numbers 1-100 fizz for 3* buzz for 5* fizzbuzz for 15*
- * Return: Always 0
+ * main - fizzbuzz 3, 5, 15,1-100,space
+ * Return: always 0
  */
 
 int main(void)
 {
-	int n = 0;
+	int n = 1;
 
-	if (n % 3 == 0)
+	while (n <= 100)
 	{
-		putchar('F');
-		putchar('i');
-		putchar('z');
-		putchar('z');
-		putchar(' ');
-	}
-	else if (n % 5 == 0)
-	{
-		putchar('B');
-		putchar('u');
-		putchar('z');
-		putchar('z');
-		putchar(' ');
-	}
-	else if (n % 15 == 0)
-	{
-		putchar('F');
-		putchar('i');
-		putchar('z');
-		putchar('z');
-		putchar('B');
-		putchar('u');
-		putchar('z');
-		putchar('z');
-		putchar(' ');
-	}
-	else
-	{
-		putchar('0' + n);
-		putchar(' ');
+		if (n % 3 == 0)
+		{
+			printf("fizz ");
+		}
+		else if (n % 5 == 0)
+		{
+			printf("buzz ");
+		}
+		else if (n % 15 == 0)
+		{
+			printf("fizzbuzz ");
+		}
+		else
+		{
+			printf(" ");
+		}
+		n++;
 	}
 	return (0);
 }
