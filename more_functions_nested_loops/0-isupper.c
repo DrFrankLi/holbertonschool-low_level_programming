@@ -7,12 +7,10 @@
  * Return: 1 if upper 0 otherwise
  */
 
-int main(void)
+int _isupper(int c)
 {
 	/* isupper takes a single argument, which is an integer representing a character.*/
        /*If the character is an uppercase letter, it returns a non-zero value,otherwise 0*/
-	char c;
-
 	if ( c >= 'A' && c <= 'Z')
 	{
 		return (1);
