@@ -8,11 +8,13 @@
 
 void more_numbers(void)
 {
-	char h = '0';
-	char v = '0';
+	char h;
+	char v;
 
+	v = '0';
 	while (v < 10)
 	{
+		h = '0';
 		while (h <= 14)
 		{
 			if (h > 9)
