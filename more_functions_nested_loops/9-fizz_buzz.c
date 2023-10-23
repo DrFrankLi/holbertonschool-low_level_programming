@@ -29,14 +29,14 @@ int main(void)
 	{
 		putchar('F');
 		putchar('i');
-		putchar('z'); 
-		putchar('z'); 
+		putchar('z');
+		putchar('z');
 		putchar('B');
 		putchar('u');
-		putchar('z'); 
-		putchar('z'); 
+		putchar('z');
+		putchar('z');
 		putchar(' ');
-	}	
+	}
 	else
 	{
 		putchar('0' + n);
