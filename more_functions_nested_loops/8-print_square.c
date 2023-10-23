@@ -3,7 +3,7 @@
 
 /**
  * print_square - prints a square, followed by a new line
- * size: the number of# hori + verti
+ * @size: the number of# hori + verti
  * Return: always 0
  */
 
