@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <ctype.h>
 
 /**
  * _isupper - checks for uppercase character
@@ -9,12 +10,13 @@
 
 int _isupper(int c)
 {
-	while ( c >= 'A' && c <= 'Z')
-	{
-		_putchar('0' + 1);
-	}
-	while ( c >= 'a' && c <= 'z')
-	{
-		_putchar('0' + 0);
-	}
+	int i;
+
+	/* isupper takes a single argument, which is an integer representing a character.*/
+       /*If the character is an uppercase letter, it returns a non-zero value,otherwise 0*/
+	i = isupper(c);
+	if (i == 0)
+		return (0);
+	else
+		return (1);	
 }
