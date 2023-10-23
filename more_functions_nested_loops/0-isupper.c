@@ -11,10 +11,12 @@ int _isupper(int c)
 {
 	/* isupper takes a single argument, which is an integer representing a character.*/
        /*If the character is an uppercase letter, it returns a non-zero value,otherwise 0*/
-	if (c >= 65 && c <= 90)
+	if ( c >= 'A' && c <= 'Z')
+	{
 		return (1);
+	}
 	else
+	{
 		return (0);
-
-
+	}
 }
