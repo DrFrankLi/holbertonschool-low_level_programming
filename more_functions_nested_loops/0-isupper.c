@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include <ctype.h>
 
 /**
  * _isupper - checks for uppercase character
@@ -10,13 +9,12 @@
 
 int _isupper(int c)
 {
-	int i;
-
 	/* isupper takes a single argument, which is an integer representing a character.*/
        /*If the character is an uppercase letter, it returns a non-zero value,otherwise 0*/
-	i = isupper(c);
-	if (i == 0)
-		return (0);
+	if (c >= 65 && c <= 90)
+		return (1);
 	else
-		return (1);	
+		return (0);
+
+
 }
