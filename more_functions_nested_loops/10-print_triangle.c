@@ -27,12 +27,11 @@ void print_triangle(int size)
 			}
 			_putchar(' ');
 			_putchar('#');
-			h++;
+			v++;
 		}
 	}
 	else
 	{
 		_putchar('\n');
 	}
-	return;
 }
