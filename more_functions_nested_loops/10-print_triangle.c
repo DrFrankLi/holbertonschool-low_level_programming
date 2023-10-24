@@ -31,6 +31,7 @@ void print_triangle(int size)
 				h++;
 			}
 			v++;
+			_putchar('\n');
 		}
 	}
 	else
