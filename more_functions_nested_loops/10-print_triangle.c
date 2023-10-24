@@ -20,7 +20,7 @@ void print_triangle(int size)
 			h = 1;
 			while (h < size)
 			{
-				if (h <= size - v)
+				if (h <= (size - v))
 				{
 					_putchar(' ');
 				}
@@ -30,7 +30,7 @@ void print_triangle(int size)
 				}
 				h++;
 			}
-			size++;
+			v++;
 			_putchar('\n');
 		}
 	}
