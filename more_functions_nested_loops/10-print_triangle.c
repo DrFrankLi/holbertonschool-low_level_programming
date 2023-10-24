@@ -30,7 +30,7 @@ void print_triangle(int size)
 				}
 				h++;
 			}
-			v++;
+			size++;
 			_putchar('\n');
 		}
 	}
