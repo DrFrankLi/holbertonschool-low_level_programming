@@ -20,13 +20,16 @@ void print_triangle(int size)
 			h = 1;
 			while (h < size)
 			{
-				_putchar(' ');
-				_putchar('#');
-				_putchar('\n');
+				if (h <= size - v)
+				{
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar('#');
+				}
 				h++;
 			}
-			_putchar(' ');
-			_putchar('#');
 			v++;
 		}
 	}
