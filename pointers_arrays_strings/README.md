@@ -1,0 +1,1 @@
+pointers_arragys_strings
