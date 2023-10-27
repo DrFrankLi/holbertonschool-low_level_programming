@@ -11,22 +11,24 @@ void rev_string(char *s)
 {
 	int length;
 	int i;
+	int j;
+	char swap;
 
-	if (s == NULL)
-	{
-		return;
-	}
-
+	/*calculates the length of the string by iterating through the characters until it finds the null terminator '\0' */
 	length = 0;
-	while (*s != '\0')
+	while (s[length] != '\0')
 	{
 		length++;
-		s++;
 	}
+	/* printing the reverse version of string*/
 	i = length - 1;
-	while (i >= 0)
+	j = 0;
+	while (j < i)
 	{
-		_putchar(s[i]);
+		swap = s[j];
+		s[j] = s[i];
+		s[i] = swap;
+		j++;
 		i--;
 	}
 }
