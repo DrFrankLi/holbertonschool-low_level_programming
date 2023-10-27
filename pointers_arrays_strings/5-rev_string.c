@@ -14,13 +14,11 @@ void rev_string(char *s)
 	int j;
 	char swap;
 
-	/*calculates the length of the string by iterating through the characters until it finds the null terminator '\0' */
 	length = 0;
 	while (s[length] != '\0')
 	{
 		length++;
 	}
-	/* printing the reverse version of string*/
 	i = length - 1;
 	j = 0;
 	while (j < i)
