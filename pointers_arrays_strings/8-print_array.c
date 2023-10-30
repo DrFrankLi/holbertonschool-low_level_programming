@@ -10,23 +10,19 @@
 
 void print_array(int *a, int n)
 {
-	int i;
-	int j;
+	int i = 0;
 
-	i = 0;
-	j = n - 1;
-	while (i < j)
+	while (i < n)
 	{
-		printf("%d, ", a[i]);
+		if (i == n - 1)
+		{
+			printf("%d", a[i]);
+		}
+		else
+		{
+			printf("%d, ", a[i]);
+		}
 		i++;
-	}
-	if (i < 0)
-	{
-		printf("\n");
-	}
-	else
-	{
-		printf("%d", a[j]);
 	}
 	printf("\n");
 }
