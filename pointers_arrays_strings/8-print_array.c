@@ -20,11 +20,11 @@ void print_array(int *a, int n)
 		if (i < j)
 		{
 			printf("%d, ", a[i]);
+			i++;
 		}
 		else
 		{
 			printf("%d", a[i]);
-			i++;
 		}
 	}
 	printf("\n");
