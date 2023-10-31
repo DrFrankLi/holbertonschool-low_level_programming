@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * _stracat - concatenates two strings
- * @dest: destination 
+ * _strcat - concatenates two strings
+ * @dest: destination
  * @src: source
  * Return: Always 0
  */
