@@ -20,7 +20,7 @@ char *_strncpy(char *dest, char *src, int n)
 		{
 			dest[len_d] = src[len_s];
 			len_d++;
-			len_s++;
+			len_s--;
 		}
 		else if (src[n] == '\0')
 		{
