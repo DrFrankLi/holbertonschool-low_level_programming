@@ -18,12 +18,12 @@ char *_strncpy(char *dest, char *src, int n)
 		if (src[actual_len] != '\0')
 		{
 			dest[actual_len] = src[actual_len];
-			actual_len++;
 		}
 		else
 		{
-			break;
+			dest[actual_len] = '\0';
 		}
+		actual_len++;
 	}
 	return (dest);
 }
