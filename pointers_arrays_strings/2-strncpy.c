@@ -22,7 +22,8 @@ char *_strncpy(char *dest, char *src, int n)
 		}
 		else
 		{
-			break;
+			dest[actual_len] = '\0';
+			actual_len++;
 		}
 	}
 	return (dest);
