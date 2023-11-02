@@ -13,7 +13,7 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int actual_len = 0;
 
-	while (actual_len <= n)
+	while (actual_len < n)
 	{
 		if (src[actual_len] != '\0')
 		{
