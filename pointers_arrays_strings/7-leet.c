@@ -8,13 +8,15 @@
 
 char *leet(char *s)
 {
-	int i = 0;
-	int j = 0;
+	int i;
+	int j;
 	char num[] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
 	char let[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 
+	i = 0;
 	while (s[i] != '\0')
 	{
+		j = 0;
 		while (let[j] != '\0')
 		{
 			if (s[i] == let[j])
