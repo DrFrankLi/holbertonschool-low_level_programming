@@ -20,8 +20,11 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 	if (actual_len < n)
 	{
-		dest[actual_len] = '\0';
-		actual_len++;
+		while ( actual_len < n)
+		{
+			dest[actual_len] = '\0';
+			actual_len++;
+		}
 	}
 	return (dest);
 }
