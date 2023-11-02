@@ -34,4 +34,5 @@ char *leet(char *s)
 		}
 		i++;
 	}
+	return 0;
 }
