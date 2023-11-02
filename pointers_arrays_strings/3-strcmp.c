@@ -15,22 +15,22 @@ int _strcmp(char *s1, char *s2)
 
 	while (*s1 != 0 && *s2 != 0)
 	{
-		i = i*10 + (*s1 - '\0');
-		j = j*10 + (*s2 - '\0');
+		i = i * 10 + (*s1 - '\0');
+		j = j * 10 + (*s2 - '\0');
 		i++;
 		j++;
 	}
 	if (i > j)
 	{
-		printf("-%d\n",i);
+		printf("-%d\n", i);
 	}
 	else if (i < j)
 	{
-		printf("%d\n",i);
+		printf("%d\n", i);
 	}
 	else
 	{
 		printf("0");
 	}
 	return (0);
-}	
+}
