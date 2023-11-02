@@ -15,11 +15,10 @@ char *_strncpy(char *dest, char *src, int n)
 
 	while (actual_len < n)
 	{
-		if (src[n] != '\0')
+		if (src[actual_len] != '\0')
 		{
-			dest[actual_len] = src[n];
+			dest[actual_len] = src[actual_len];
 			actual_len++;
-			n++;
 		}
 		else
 		{
