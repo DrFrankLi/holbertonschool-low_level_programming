@@ -11,16 +11,18 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int len_d = 0;
-	int len_s = 0;
+	int actual_len = 0;
 
-	while (len_s != '\0')
+	while (actual_len <= n)
 	{
-		if (len_s <= n)
+		if (src[actual_len] != '\0')
 		{
-			dest[len_d] = src[len_s];
-			len_d++;
-			len_s++;
+			dest[actual_len] = src[actual_len];
+			actual_len++;
+		}
+		else
+		{
+			break;
 		}
 	}
 	return (dest);
