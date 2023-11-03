@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strchar: locates a character in a string
+ * _strchr - locates a character in a string
  * @s: string of char
  * @c: char
  * Return: always 0 . A pointer to the first occurrence of c in s
@@ -10,13 +10,13 @@
 
 char *_strchr(char *s, char c)
 {
-	char *s_ptr = s;
-	int i = 0;
-
-	while (s[i] != '\0')
+	while (*s != '\0')
 	{
-		s[i] = c;
-		i++;
+		if (*s == c)
+		{
+			return (s);
+		}
+		s++;
 	}
-	return (s_ptr);
+	return (NULL);
 }
