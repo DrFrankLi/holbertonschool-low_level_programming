@@ -3,6 +3,7 @@
 
 /**
  * is_prime_number - returns 1 if prime,or 0
+ * is_prime_recursive - recursive checking
  * @n: input int
  * Return: always 0
  */
