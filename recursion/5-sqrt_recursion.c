@@ -19,7 +19,7 @@ int _sqrt_recursion(int n)
 	{
 		return (n);
 	}
-	r = 999999999;
+	r = 9999;
 	n = r * r;
 
 	return (_sqrt_recursion(r - 1));
