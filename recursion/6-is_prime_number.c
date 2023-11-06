@@ -3,12 +3,11 @@
 
 /**
  * is_prime_number - returns 1 if prime,or 0
- * is_prime_recursive - recursive checking
  * @n: input int
  * Return: always 0
  */
 
-int is_prime_recursive(int n)
+int is_prime_number(int n)
 {
 	if (n <= 1)
 	{
@@ -22,9 +21,5 @@ int is_prime_recursive(int n)
 	{
 		return (0);
 	}
-	return (is_prime_recursive(n - 1));
-}
-int is_prime_number(int n)
-{
-	return (is_prime_recursive(n));
+	return (is_prime_number(n - 1));
 }
