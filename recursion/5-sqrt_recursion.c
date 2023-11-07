@@ -4,10 +4,11 @@
 /**
  * _sqrt_recursion -returns natural square root of int n
  * @n: int
+ * @r: int
  * Return: always 0
  */
 
-int _sqrt_recursion(int n, int r)
+int _sqrt_recursion(int n)
 {
 	if (n < 0)
 	{
@@ -17,7 +18,12 @@ int _sqrt_recursion(int n, int r)
 	{
 		return (n);
 	}
-	else if (r * r == n)
+	return (_sqrt_helper(n, 1));
+}
+
+int _sqrt_helper(int n, int r)
+{
+	if (r * r == n)
 	{
 		return (r);
 	}
@@ -25,6 +31,5 @@ int _sqrt_recursion(int n, int r)
 	{
 		return (-1);
 	}
-
-	return (_sqrt_recursion(n, r + 1));
+	return (_sqrt_helper(n, r + 1));
 }
