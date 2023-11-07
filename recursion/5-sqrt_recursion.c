@@ -3,6 +3,7 @@
 
 /**
  * _sqrt_recursion -returns natural square root of int n
+ * _sqrt_helper -helps to bridging two int into one
  * @n: int
  * @r: int
  * Return: always 0
