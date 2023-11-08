@@ -11,11 +11,14 @@
 int main(int argc, char *argv[])
 {
 	int i;
+	int mul;
 
 	i = 1;
 	while (i < argc)
 	{
-		printf("%d * %d\n", atoi(argv[i]), atoi(argv[i + 1]));
+		mul = atoi(argv[i]) * atoi(argv[i + 1]);
+		i++;
 	}
+	printf("%d\n", mul);
 	return (0);
 }
