@@ -5,7 +5,7 @@
 /**
  * string_len - function to calculate the length of a string
  * @str: string
- * return: alwyas 0
+ * Return: always 0. length of string
  */
 
 int string_len(char *str)
