@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * str_len - function to calculate the length of a string
+ * string_len - function to calculate the length of a string
  * @str: string
  * return: alwyas 0
  */
