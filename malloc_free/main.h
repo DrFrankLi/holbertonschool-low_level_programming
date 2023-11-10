@@ -61,6 +61,7 @@ int _sqrt_recursion(int n);
 int _sqrt_helper(int n, int r);
 int is_prime_number(int n);
 char *create_array(unsigned int size, char c);
+char *_strdup(char *str);
 
 
 
