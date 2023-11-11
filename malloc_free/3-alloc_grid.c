@@ -4,8 +4,11 @@
 
 /**
  * alloc_grid - Allocates a 2d array of int with specified width and height
- * @width: width of the grid
- * @height: height of the grid
+ * Each element of the grid is initialized to 0
+ *
+ * @width: The width of the grid
+ * @height: The height of the grid
+ * 
  * Return : a pointer to the allocated 2d array or null
  */
 
