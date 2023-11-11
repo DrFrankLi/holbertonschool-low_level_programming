@@ -5,11 +5,9 @@
 /**
  * alloc_grid - Allocates a 2d array of int with specified width and height
  * Each element of the grid is initialized to 0
- *
  * @width: The width of the grid
  * @height: The height of the grid
- * 
- * Return : a pointer to the allocated 2d array or null
+ * Return : A pointer to the allocated 2d array or null
  */
 
 int **alloc_grid(int width, int height)
@@ -22,7 +20,7 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
-	grid = malloc(sizeof(int *) * height);
+	grid = (int **)malloc(sizeof(int *) * height);
 	if (grid == NULL)
 	{
 		return (NULL);
