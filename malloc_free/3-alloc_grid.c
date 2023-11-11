@@ -4,8 +4,8 @@
 
 /**
  * alloc_grid - returns a pointer to a 2d array of int
- * @width: width of the grid
- * @height: grid height
+ * @width : width of the grid
+ * @height : height of the grid
  * Return : always 0
  */
 
