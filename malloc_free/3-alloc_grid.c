@@ -7,7 +7,7 @@
  * Each element of the grid is initialized to 0
  * @width: The width of the grid
  * @height: The height of the grid
- * Return : A pointer to the allocated 2d array or null
+ * Return: A pointer to the allocated 2d array or null
  */
 
 int **alloc_grid(int width, int height)
