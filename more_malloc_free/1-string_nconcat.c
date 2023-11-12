@@ -41,7 +41,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	result = malloc(len1 + n + 1);
 	if (result == NULL)
 	{
-		exit (EXIT_FAILURE);
+		exit(EXIT_FAILURE);
 	}
 	while (s1[i] != '\0')
 	{
