@@ -1,6 +1,6 @@
-#ifndef DOG_H
-#define DOG_H
+#include "1-init_dog.h"
 #include <stddef.h>
+#include <stdlib.h>
 
 /**
  * init_dog - initialize a variable of type struct dog
@@ -9,13 +9,6 @@
  * @age: dog age
  * @owner: dog owner
  */
-
-struct dog
-{
-	char *name;
-	float age;
-	char *owner;
-};
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
@@ -26,4 +19,3 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 		d->owner = owner;
 	}
 }
-#endif
