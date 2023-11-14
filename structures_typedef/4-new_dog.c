@@ -24,14 +24,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		return (NULL);
 	}
-	newdog->name = strdup(name);
+	strcpy(newdog->name, name);
 	if (newdog->name == NULL)
 	{
 		free(newdog);
 		return (NULL);
 	}
 	newdog->age = age;
-	newdog->owner = strdup(owner);
+	strcpy(newdog->owner, owner);
 	if (newdog->owner == NULL)
 	{
 		free(newdog->name);
@@ -39,18 +39,4 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	return (newdog);
-}
-/**
- * free_dog - free all memories if any d info is null
- * @d: dog info
- */
-
-void free_dog(dog_t *d)
-{
-	if (d != NULL)
-	{
-		free(d->name);
-		free(d->owner);
-		free(d);
-	}
 }
