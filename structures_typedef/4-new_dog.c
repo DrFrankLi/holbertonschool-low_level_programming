@@ -6,6 +6,7 @@
 /**
  * new_dog - creates a new dog info with a copy of name and owner
  * @name: dog's name
+ * @age: dog's age
  * @owner: dog's owner
  * Return: nothing or NULL
  */
@@ -34,6 +35,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (newdog->owner == NULL)
 	{
 		free(newdog->name);
+		free(newdog->owner);
 		free(newdog);
 		return (NULL);
 	}
