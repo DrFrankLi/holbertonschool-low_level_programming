@@ -40,6 +40,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	return (newdog);
 }
+/**
+ * free_dog - free all memories if any d info is null
+ * @d: dog info
+ * @name: dog name
+ * @age: dog age
+ * @owner: dog owner
+ */
+
 void free_dog(dog_t *d)
 {
 	if (d != NULL)
