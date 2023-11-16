@@ -5,7 +5,7 @@
 /**
  * print_name - prints a name
  * @name: value of char pointer
- * @(*f): pointer to function
+ * @f: pointer to function
  * Return: nothing
  */
 
