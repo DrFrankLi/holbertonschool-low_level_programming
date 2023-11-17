@@ -5,7 +5,8 @@
 /**
  * get_op_func - selects the correct function to perfomr the op requested
  * @s: char str, operator passed as arg
- * @int: related int
+ * @a: related int
+ * @b: realted int
  * Return: nothing
  */
 
@@ -13,8 +14,7 @@ int (*get_op_func(char *s))(int a, int b)
 {
 	int i = 0;
 
-	op_t ops[] = 
-	{
+	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},
 		{"*", op_mul},
