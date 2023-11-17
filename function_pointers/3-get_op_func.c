@@ -13,7 +13,8 @@ int (*get_op_func(char *s))(int a, int b)
 {
 	int i = 0;
 
-	op_t ops[] = {
+	op_t ops[] = 
+	{
 		{"+", op_add},
 		{"-", op_sub},
 		{"*", op_mul},
