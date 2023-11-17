@@ -48,7 +48,11 @@ int op_div(int a, int b)
 	{
 		return (a / b);
 	}
-	return (0);
+	else
+	{
+		fprintf(stderr, "Error\n");
+		exit(100);
+	}
 }
 /**
  * op_mod - the leftover of a divided by b
@@ -62,5 +66,9 @@ int op_mod(int a, int b)
 	{
 		return (a % b);
 	}
-	return (0);
+	else
+	{
+		fprintf(stderr, "Error\n");
+		exit(100);
+	}
 }
