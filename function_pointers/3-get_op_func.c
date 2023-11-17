@@ -5,8 +5,6 @@
 /**
  * get_op_func - selects the correct function to perfomr the op requested
  * @s: char str, operator passed as arg
- * @a: related int
- * @b: realted int
  * Return: nothing
  */
 
