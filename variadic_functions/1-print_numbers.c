@@ -5,7 +5,7 @@
 
 /**
  * print_numbers - prints numbers \n
- * @seperator: const char, the string to be printed between num
+ * @separator: const char, the string to be printed between num
  * @n: const unsigned int , num of int passed to func
  * Return: a new line at the end of func
  */
@@ -13,8 +13,9 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i = 0;
-	
+
 	va_list args;
+
 	va_start(args, n);
 
 	while (i < n)
