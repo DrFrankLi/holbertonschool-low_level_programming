@@ -4,6 +4,8 @@
 
 /**
  * struct my_print - the header function to def
+ * @c: char
+ * @f: function pointer
  * Return: void
  */
 
