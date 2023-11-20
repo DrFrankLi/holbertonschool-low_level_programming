@@ -40,7 +40,7 @@ void print_int(va_list arg)
 void print_string(va_list arg)
 {
 	char *str = va_arg(arg, char*);
-	
+
 	if (str == NULL)
 	{
 		str = "(nil)";
