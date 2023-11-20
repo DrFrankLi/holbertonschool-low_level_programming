@@ -67,10 +67,10 @@ void print_float(va_list arg)
 /**
  * print_all - prints anything
  * @format: a list of types of args
- * @c: char
- * @i: int
- * @f: float
- * @s: char*, if NULL return (nil)
+ * c: char
+ * i: int
+ * f: float
+ * s: char*, if NULL return (nil)
  * Return: \n
  */
 
