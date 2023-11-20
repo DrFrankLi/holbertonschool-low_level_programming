@@ -46,7 +46,6 @@ void print_string(va_list arg)
 	{
 		printf("(nil)");
 	}
-	printf("%s", str);
 }
 
 /**
@@ -89,12 +88,12 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(ptr, format);
-	
+
 	i = 0;
 	while (format && format[i])
 	{
 		j = 0;
-		
+
 		while (j < 4 && format[i] != func[j].c[0])
 		{
 			j++;
