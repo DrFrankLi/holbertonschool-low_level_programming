@@ -97,19 +97,18 @@ void print_all(const char * const format, ...)
 		while (j < 4 && (format[i] != *func[j].c))
 		{
 			j++;
-			if (j < 4)
-			{
-				printf("%s", sep);
-				func[j].f(ptr);
-				sep = ", ";
-			}
-			else
-			{
-				printf("%s", sep);
-				printf("%c", format[i]);
-				sep = ", ";
-			}
 		}
+		if (j < 4)
+		{
+			printf("%s", sep);
+			func[j].f(ptr);
+		}
+		else
+		{
+			printf("%s", sep);
+			printf("%c", format[i]);
+		}
+		sep = ", ";			
 		i++;
 	}
 	printf("\n");
