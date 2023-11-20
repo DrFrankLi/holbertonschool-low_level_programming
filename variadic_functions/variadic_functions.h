@@ -2,6 +2,11 @@
 #define _VARIADIC_FUNCTIONS_H_
 #include <stdarg.h>
 
+/**
+ * struct my_print - the header function to def
+ * Return: void
+ */
+
 typedef struct my_print
 {
 	char *c;
